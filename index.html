@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aitar soz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+  </head>
+<style>
+
+#clock {
+   text-align: center;
+   margin-top: 10%;
+   font-size: 50px;
+   font-family: Baskerville, Georgia;
+   color: white;
+}
+</style>
+<script>
+    function clock(){
+
+    //Save the times in variables
+
+    var today = new Date();
+
+    var hours = today.getHours();
+    var minutes = today.getMinutes();
+    var seconds = today.getSeconds();
+
+
+    //Set the AM or PM time
+
+    if (hours >= 12){
+      meridiem = " PM";
+    }
+    else {
+      meridiem = " AM";
+    }
+
+
+    //convert hours to 12 hour format and put 0 in front
+    if (hours>12){
+    	hours = hours - 12;
+    }
+    else if (hours===0){
+    	hours = 12;
+    }
+
+    //Put 0 in front of single digit minutes and seconds
+
+    if (minutes<10){
+    	minutes = "0" + minutes;
+    }
+    else {
+    	minutes = minutes;
+    }
+
+    if (seconds<10){
+    	seconds = "0" + seconds;
+    }
+    else {
+    	seconds = seconds;
+    }
+
+
+    document.getElementById("clock").innerHTML = (hours + ":" + minutes + ":" + seconds + meridiem);
+
+    }
+
+
+    setInterval('clock()', 1000);
+</script>
+  <body >
+    <div  class="slider" style="background-image: url('images/6.jpg');">
+      <div class="load">
+      </div>
+      <div class="content" id="container">
+        <header>
+          <ul>
+            <li><a href="#bir">Biz týraly</a></li>
+            <li><a href="#eki">Bolmeler</a></li>
+            <li><a href="#tort">Mumkindikter</a></li>
+            <li><a href="#ush">Tolem</a></li>
+            
+          </ul>
+        </header>
+        <div id="clock" >
+
+        </div>
+        <div class="Basty">
+          <h1>Darmu_hotel</h1>
+          <p>Qosh keldiniz</p>
+      </div>
+    </div>
+    <section class="about" id="bir">
+      <div class="inner__about">
+          <img class="about__image" src="images/bag.jpg" alt="about">
+          <div class="about__content">
+              <h1 class="about__title">About the<br> “Darmu hotel”</h1>
+              <p class="about__first-prgph">Location, high quality, uniqueness, services provided and the personalized levels of 
+                  service offered the top five attributes attracting guests to these hotels. The growth of the boutique hotel sector
+                   may be because of hotel clients looking for alternatives to standard and more traditional accommodation. </p>
+              <p class="about__second-prgph">At the same time, our hotel are becoming more and more comfortable, 
+                  offering guests new services that previously simply did not exist or were accessible only to guests of 5-star 
+                  hotels – spacious apartments, cable TV, high speed internet access, recreation complexes, and guaranteed security. 
+                  But it turns out that the modern consumer is not enough satisfied with what traditional hotel give him; he needs now more
+                   than reliability and the program of “earning points” </p>
+          </div>
+      </div>
+  </section>
+  <section class="our-firends" id="eki">
+    <div class="of__wrapper">
+        <div class="of_inner">
+            <h1 class="of__subtitle">
+                Our  rooms
+            </h1>
+            <div class="pets__slider">
+                <button class="pets__arrow" type="button">←</button>
+                <div class="slider-element element1">
+                    
+                    <h1 class="slider_element-caption"> </h1>
+                    <button class="slider_element-button">Standard</button>
+                </div>
+                <div class="slider-element element2">
+                    
+                    <h1 class="slider_element-caption"> </h1>
+                    <button class="slider_element-button">Deluxe</button>
+                </div>
+                <div class="slider-element element3">
+                    
+                    <h1 class="slider_element-caption"> </h1>
+                    <button class="slider_element-button">Luxe</button>
+                </div>
+                <button class="pets__arrow" type="button">→</button>
+            </div>
+            <button class="btn__get-to-know">Get to know the rest</button>
+        </div>
+    </div>
+  </section>
+  <section class="help" id="tort">
+    <div class="help__wrapper">
+        <div class="inner__help">
+            <h1 class="help__subtitle">
+                What do we have
+            </h1>
+            <div class="help__content ">
+                <div class="help__item ">
+                    <img class="help__item-icon help__item-1" src="icons/bed.svg" alt="icon_item">
+                    <h1 class="help__item-caption">Bed</h1>
+                </div>
+                <div class="help__item ">
+                    <img class="help__item-icon help__item-2" src="icons/forest.svg" alt="icon_item">
+                    <h1 class="help__item-caption">Nature</h1>
+                </div>
+                <div class="help__item ">
+                    <img class="help__item-icon help__item-3" src="icons/game-controller.svg" alt="icon_item">
+                    <h1 class="help__item-caption">Game</h1> 
+                </div>
+                <div class="help__item">
+                    <img class="help__item-icon help__item-4" src="icons/massage.svg" alt="icon_item">
+                    <h1 class="help__item-caption ">Massage</h1> 
+                </div>
+                <div class="help__item" >
+                    <img class="help__item-icon help__item-5" src="icons/phone.svg" alt="icon_item">
+                    <h1 class="help__item-caption">Phone</h1> 
+                </div>
+                <div class="help__item ">
+                    <img class="help__item-icon help__item-6" src="icons/sauna.svg" alt="icon_item">
+                    <h1 class="help__item-caption">Sauna</h1> 
+                </div>
+                <div class="help__item ">
+                    <img class="help__item-icon help__item-7" src="icons/swimmer.svg" alt="icon_item">
+                    <h1 class="help__item-caption">Pool</h1>
+                </div>
+                <div class="help__item ">
+                    <img class="help__item-icon help__item-8" src="icons/television.svg" alt="icon_item">
+                    <h1 class="help__item-caption">TV</h1>
+                </div>
+                <div class="help__item ">
+                    <img class="help__item-icon help__item-9" src="icons/wifi.svg" alt="icon_item">
+                    <h1 class="help__item-caption">WIFI</h1> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="in_add" id="ush">
+  <div class="in_add-wrapper">
+      <div class="in_add-container">
+          <img class="in__add-image" src="icons/calendar.svg">
+          <div class="id_add-content">
+              <h1 class="in__add-title">You can reserve the room</h1>
+              <span class="in__add-subtitle">Name of the bank / Type of bank account</span>
+              <button class="in__add-credit-card">RESERVE</button>
+              <p class="in__add-text">The data is then passed onto a backend system which can be accessed by
+                   hotels to manage bookings. Other features may come with it – for example, the 
+                   automation of reservation confirmation emails..</p>
+          </div>
+      </div>
+  </div>   
+</section>
+
+<footer class="footer" id="tort">
+    <div class="footer-wrapper">
+        <div class="footer-inner">
+            <div class="footer__contatcs">
+                <h1 class="contact__title">For questions and suggestions</h1>
+                <a class="contact__email" href="mailto:muhammed03amin@gmail.com">
+                    <img class="email__icon" src="icons/mail.svg">
+                    <span class="email__item">email@darmu.com</span>
+                </a>
+                
+                
+            </div>
+             <div class="footer__contatcs">
+                <h1 class="address__title">We are waiting for your call</h1>
+                <div class="contact__email">
+                    <img class="email__icon" src="icons/mobile.svg">
+                    <span class="email__item">1234567891011</span>
+                </div>      
+            </div>
+            <img class="footer-image" src="icons/hotel.svg">
+        </div>
+    </div>
+</footer>
+  </body>
+</html>
