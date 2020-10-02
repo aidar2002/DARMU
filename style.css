@@ -3,6 +3,11 @@
 *{
   margin:0;
   padding: 0;
+ 
+}
+html, body {
+  cursor: url("icons/cursor.svg");
+
 }
 
 header{
@@ -53,7 +58,7 @@ img{
 }
 
 .slider{
-
+  background-image: url('images/6.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -131,6 +136,7 @@ img{
   100%{
     background-color: url('images/5.jpg')
   }
+
 
 }
 @media screen and (max-width:640px) {
@@ -578,7 +584,7 @@ img{
   radial-gradient(100% 215.42% at 0% 0%,
    #5B483A 0%, #262425 100%), 
    #211F20;
-   height: 355px;
+   height: 420px;
 
 }
 
@@ -856,36 +862,14 @@ transform: rotate(45deg);
 background-color: rgba(255,255,255,0);
 }
 
+.footer-image{
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+          transition:         transform .79s ease-in-out;
+          transform: rotate(330deg);
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+.footer-image:hover {
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
+  transform: rotate(60deg);
 }
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
