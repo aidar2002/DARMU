@@ -472,8 +472,8 @@ img{
   height: 113px;  
   transition: all .6s;
 }
-.help__item-icon:hover {
-  transform: scale(3);
+.help__item:hover {
+  transform: scale(1.9);
   transition: all .6s;
 }
 
@@ -485,7 +485,6 @@ img{
   align-content: center;
   width: 52px;
   height: 52px;
-  transition: all .6s;
 }
 
 .help__item-caption {
