@@ -193,7 +193,7 @@ img{
   align-items: center;
   letter-spacing: 0.06em;
   color: #545454;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-top: 80px;
 }
 
@@ -204,13 +204,30 @@ img{
   font-size: 15px;
   line-height: 160%;
   color: #4C4C4C;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .about__second-prgph {
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
+
+  display: flex;
+  align-items: center;
+
+  /* color-dark-xl */
+
+  color: #4C4C4C;
+  margin-bottom: 10px;
+}
+
+.about__third-prgph {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 800;
   font-size: 15px;
   line-height: 160%;
   /* or 24px */
